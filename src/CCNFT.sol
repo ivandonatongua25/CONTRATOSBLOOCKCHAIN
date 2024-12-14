@@ -50,8 +50,8 @@ contract CCNFT is ERC721Enumerable, Ownable, ReentrancyGuard {
 
 // Estructura del estado de venta de un NFT.
     struct TokenSale {
-        bool public  tokenId = true,
-        uint256 price;
+        bool public  tokenId => true,
+        uint256  public price;
         // Indicamos si el NFT está en venta.
         // Indicamos el precio del NFT si está en venta.
     }
@@ -153,7 +153,7 @@ contract CCNFT is ERC721Enumerable, Ownable, ReentrancyGuard {
 			require(); // Verificacón listTokenId[i] exista. Incluir un mensaje de falla.
 
 // Verificamos que el llamador de la función (_msgSender()) sea el propietario del token. Si no es así, la transacción falla con el mensaje "Only owner can Claim".
-            require(); // Verificacón que _msgSender()) sea el propietario del token. Incluir un mensaje de falla.
+            require(); // Verificacón que _msgSender() sea el propietario del token. Incluir un mensaje de falla.
             claimValue +=                ; // Suma de el valor del token al claimValue acumulado.
                                          ; // Reseteo del valor del token a 0.
 
